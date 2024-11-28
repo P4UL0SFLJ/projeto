@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrypt.js"></script>
+    <title>Conteúdo</title>
+</head>
+
+<body class="defaultbody" id="bodycont">
+    <header class="default-header" id="header">
+
+        <a class="hnav" id="navegar" href="index.html">Sobre Nós</a>
+        <a class="hnav" id="navegarcont" href="conteudo.html">Conteúdo</a>
+        <a class="hnav" id="navegarcad" href="cadastro.html">Saiba Mais</a>
+
+        <nav class="header-menu">
+            <img src="assets/menu-bar.png" alt="" class="menu-barra" onclick="abreMenu()">
+            <section class="menu-container">
+                <img src="assets/menu-bar.png" alt="" class="menu-insidebar" onclick="fecharMenu()">
+                <nav class="menu-link">
+                    <a class="link" id="navegar" href="index.html"><img class="icone-menu" src="assets/casa.png"
+                            alt="">Home</a>
+                    <a class="link" id="navegarcont" href="conteudo.html"><img class="icone-menu"
+                            src="assets/conteudo.png" alt="">Conteúdo</a>
+                    <a class="link" id="navegarcad" href="cadastro.html"><img class="icone-menu" src="assets/pessoa.png"
+                            alt="">Contato/Login</a>
+                    <section class="fundo" id="fundo"></section>
+                </nav>
+            </section>
+        </nav>
+    </header>
+
+    <section class="container12" id="container-conteudo" onmouseover="rolagem('container-conteudo')">
+
+        <section class="card cardssd">
+            <h2>SSD</h2>
+            <img src="assets/ssdd.png" alt="" class="produtos">
+            <button onclick="abrirLink('https://www.kabum.com.br/hardware/ssd-2-5')">Ver iformações</button>
+        </section>
+
+        <section class="card cardprocessador">
+            <h2>PROCESSADOR</h2>
+            <img src="assets/cpu.png" alt="" class="produtos">
+            <button onclick="abrirLink('https://www.kabum.com.br/busca/processador')">Ver iformações</button>
+        </section>
+
+        <section class="card cardplacamae">
+            <h2>PLACA MÃE</h2>
+            <img src="assets/placa-mae.png" alt="" class="produtos">
+            <button onclick="abrirLink('https://www.kabum.com.br/hardware/placas-mae')">Ver iformações</button>
+        </section>
+
+        <section class="card cardplacadevideo">
+            <h2>PLACA DE VÍDEO</h2>
+            <img src="assets/gpu.png" alt="" class="produtos">
+            <button onclick="abrirLink('https://www.kabum.com.br/hardware/placa-de-video-vga')">Ver iformações</button>
+        </section>
+
+        <section class="card cardmemoriaram">
+            <h2>MEMÓRIA RAM</h2>
+            <img src="assets/memoria-ram.png" alt="" class="produtos">
+            <button onclick="abrirLink('https://www.kabum.com.br/hardware/memoria-ram')">Ver iformações</button>
+        </section>
+
+        <section class="card cardfonte">
+            <h2>FONTE</h2>
+            <img src="assets/fonte.png" alt="" class="produtos">
+            <button onclick="abrirLink('https://www.kabum.com.br/hardware/fontes')">Ver iformações</button>
+        </section>
+    </section>
+
+    <footer class="defaultfooter" id="footerh">
+        <h6>Muito obrigado por visitar nosso site!</h6>
+    </footer>
+
+    <!-- Card 3d em js -->
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 300,
+            glare: true,
+            "max-glare": 0.5
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/pacman_icon.ico" type="image/x-icon">
+    <title>Projeto HTML, CSS & JS</title>
+</head>
+
+<body class="defaultbody" id="body">
+    <header class="default-header" id="header">
+
+        <a class="hnav" id="navegar" href="index.html">Sobre Nós</a>
+        <a class="hnav" id="navegarcont" href="conteudo.html">Conteúdo</a>
+        <a class="hnav" id="navegarcad" href="cadastro.html">Saiba Mais</a>
+
+        <nav class="header-menu">
+            <img src="assets/menu-bar.png" alt="" class="menu-barra" onclick="abreMenu()">
+            <section class="menu-container">
+                <img src="assets/menu-bar.png" alt="" class="menu-insidebar" onclick="fecharMenu()">
+                <nav class="menu-link">
+                    <a class="link" id="navegar" href="index.html"><img class="icone-menu" src="assets/casa.png"
+                            alt="">Home</a>
+                    <a class="link" id="navegarcont" href="conteudo.html"><img class="icone-menu"
+                            src="assets/conteudo.png" alt="">Conteúdo</a>
+                    <a class="link" id="navegarcad" href="cadastro.html"><img class="icone-menu" src="assets/pessoa.png"
+                            alt="">Contato/Login</a>
+                    <section class="fundo" id="fundo"></section>
+                </nav>
+            </section>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <article class="introducao">
+            <section>
+                <h2 class="welcome">Bem-Vindos!</h2>
+                <p class="ola">Olá! Sejam bem-vindos ao nosso site.<br>Este site é a conclusão de um projeto de nossa
+                    faculdade, espero que goste da experiência, desde já agradeço a visita.<br>Logo abaixo conheça os
+                    integrantes responsáveis por esse site.</p>
+            </section>
+        </article>
+        <!--Elayne-->
+        <section class="profile-card" id="perfil_Elayne" onmouseover="rolagem('perfil_Elayne')">
+            <section class="profile-header">
+                <img class="img" src="assets/imgElayne.jpeg" alt="Profile Picture">
+                <h2>Elayne Rebeca M. Silva</h2>
+            </section>
+            <section class="social-icons">
+                <img src="assets/instagram.png" alt="Instagram"
+                    onclick="abrirLink('https://www.instagram.com/elayne_rebeca13/')">
+
+                <img src="assets/facebook.png" alt="Facebook" onclick="abrirLink('')">
+
+                <img src="assets/linkedin.png" alt="LinkedIn"
+                    onclick="abrirLink('https://www.linkedin.com/in/elayne-rebeca-b90771325/')">
+
+                <img src="assets/github.png" alt="GitHub" onclick="abrirLink('https://github.com/Elayne-Rebeca')">
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('narracao-elayne', 'arrow-narracao-elayne')">
+                    <span>Narração do Integrante</span>
+                    <span class="arrow" id="arrow-narracao-elayne"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="narracao-elayne" class="section-content">
+                    <p>Olá, está é Elayne Rebeca, possui 18 anos, reside na cidade de Abreu e Lima - PE e tem uma
+                        profunda paixão pela tecnologia e música. Seu entusiasmo por Sistemas de Informação, guiou
+                        sua trajetória educacional e futuramente profissional.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('competencias-elayne', 'arrow-competencias-elayne')">
+                    <span>Competências</span>
+                    <span class="arrow" id="arrow-competencias-elayne"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="competencias-elayne" class="section-content">
+                    <p>Analitica/Inovadora/Trabalho em equipe/Habilidades Tecnicas.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('experiencias-elayne', 'arrow-experiencias-elayne')">
+                    <span>Experiências Profissionais</span>
+                    <span class="arrow" id="arrow-experiencias-elayne"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="experiencias-elayne" class="section-content">
+                    <p>Nenhuma</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('escolaridade-elayne', 'arrow-escolaridade-elayne')">
+                    <span>Escolaridade</span>
+                    <span class="arrow" id="arrow-escolaridade-elayne"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="escolaridade-elayne" class="section-content">
+                    <p>Ensino médio - Completo<br>Ensino superior - Cursando</p>
+                </section>
+            </section>
+        </section>
+        <!--Daniel-->
+        <section class="profile-card" id="perfil_Daniel" onmouseover="rolagem('perfil_Daniel')">
+            <section class="profile-header">
+                <img src="assets/imgDaniel.png" alt="Profile Picture">
+                <h2>Daniel Alencastro do Nascimento</h2>
+            </section>
+            <section class="social-icons">
+                <img src="assets/instagram.png" alt="Instagram"
+                    onclick="abrirLink('https://www.instagram.com/daniel_alencastro.x/profilecard/?igsh=MWM3YXBvcXVpM2ZuMQ==')">
+
+                <img src="assets/facebook.png" alt="Facebook"
+                    onclick="abrirLink('https://www.facebook.com/share/154AvARM5R/?mibextid=LQQJ4d')">
+
+                <img src="assets/linkedin.png" alt="LinkedIn"
+                    onclick="abrirLink('https://www.linkedin.com/in/daniel-alencastro-45699b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app')">
+
+                <img src="assets/github.png" alt="GitHub" onclick="abrirLink('https://github.com/DanielAlencastro')">
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('narracao-daniel', 'arrow-narracao-daniel')">
+                    <span>Narração do Integrante</span>
+                    <span class="arrow" id="arrow-narracao-daniel"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="narracao-daniel" class="section-content">
+                    <p>Este é Daniel Alencastro, possui 19 anos, reside na cidade de Jaboatão - PE e tem um afeto
+                        pela tecnologia, jogos e música. Suas escolhas do passado influenciaram a ele para poder
+                        estar cursando hoje a área da tecnologia.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('competencias-daniel', 'arrow-competencias-daniel')">
+                    <span>Competências</span>
+                    <span class="arrow" id="arrow-competencias-daniel"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="competencias-daniel" class="section-content">
+                    <p>Compromissado.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('experiencias-daniel', 'arrow-experiencias-daniel')">
+                    <span>Experiências Profissionais</span>
+                    <span class="arrow" id="arrow-experiencias-daniel"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="experiencias-daniel" class="section-content">
+                    <p>Trabalho com designer para uma gráfica e instala placas de comunicação visual.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('escolaridade-daniel', 'arrow-escolaridade-daniel')">
+                    <span>Escolaridade</span>
+                    <span class="arrow" id="arrow-escolaridade-daniel"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="escolaridade-daniel" class="section-content">
+                    <p>Ensino médio - Completo<br>Ensino superior - Cursando<br>Curso de Informática</p>
+                </section>
+            </section>
+        </section>
+        <!--Kenedy-->
+        <section class="profile-card" id="perfil_Kenedy" onmouseover="rolagem('perfil_Kenedy')">
+            <section class="profile-header">
+                <img src="assets/imgKenedy.jpeg" alt="Profile Picture">
+                <h2>Kenedy Kauê de Souza Azevedo</h2>
+            </section>
+
+            <section class="social-icons">
+                <img src="assets/instagram.png" alt="Instagram" onclick="abrirLink('')">
+                <img src="assets/facebook.png" alt="Facebook" onclick="abrirLink('')">
+                <img src="assets/linkedin.png" alt="LinkedIn" onclick="abrirLink('')">
+                <img src="assets/github.png" alt="GitHub" onclick="abrirLink('')">
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('narracao-kenedy', 'arrow-narracao-kenedy')">
+                    <span>Narração do Integrante</span>
+                    <span class="arrow" id="arrow-narracao-kenedy"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="narracao-kenedy" class="section-content">
+                    <p>Meu nome é Kennedy Azevedo, e atualmente resido em Recife, PE. Tenho curso técnico em
+                        Informática pelo IF Sertão-PE, onde adquiri um sólido conhecimento em programação,
+                        trabalhando com linguagens como Python, PHP, HTML e CSS. Atualmente, estou cursando
+                        Bacharelado em Engenharia da Computação na UNINASSAU, aprofundando ainda mais minhas
+                        habilidades e explorando linguagens como Java, JavaScript e C. Sou apaixonado por
+                        tecnologia, design e desafios lógico-matemáticos, e sempre tive um forte ímpeto para
+                        aprender um pouco de tudo, buscando constantemente novas áreas de conhecimento e inovação.
+                    </p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('competencias-kenedy', 'arrow-competencias-kenedy')">
+                    <span>Competências</span>
+                    <span class="arrow" id="arrow-competencias-kenedy"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="competencias-kenedy" class="section-content">
+                    <p>Dedicação/Inovador/Habilidades Tecnicas.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('experiencias-kenedy', 'arrow-experiencias-kenedy')">
+                    <span>Experiências Profissionais</span>
+                    <span class="arrow" id="arrow-experiencias-kenedy"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="experiencias-kenedy" class="section-content">
+                    <p>Nenhuma.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('escolaridade-kenedy', 'arrow-escolaridade-kenedy')">
+                    <span>Escolaridade</span>
+                    <span class="arrow" id="arrow-escolaridade-kenedy"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="escolaridade-kenedy" class="section-content">
+                    <p>Ensino Médio - Cursando<br>Ensino Superior_Engenharia da computação - cursando<br>Curso
+                        Tecnico_Informatica - Completo</p>
+                </section>
+            </section>
+        </section>
+        <!--Rafael-->
+        <section class="profile-card" id="perfil_Rafael" onmouseover="rolagem('perfil_Rafael')">
+            <section class="profile-header">
+                <img src="assets/imgRafael.jpeg" alt="Profile Picture">
+                <h2>Rafael Bernardo de Lima</h2>
+            </section>
+            <section class="social-icons">
+                <img src="assets/instagram.png" alt="Instagram" onclick="abrirLink('')">
+
+                <img src="assets/facebook.png" alt="Facebook" onclick="abrirLink('')">
+
+                <img src="assets/linkedin.png" alt="LinkedIn"
+                    onclick="abrirLink('https://www.linkedin.com/in/rafael-lima-ba1235257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')">
+
+                <img src="assets/github.png" alt="GitHub" onclick="abrirLink('https://github.com/Rafael-RB')">
+
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('narracao-rafael','arrow-narracao-rafael')">
+                    <span>Narração do Integrante</span>
+                    <span class="arrow" id="arrow-narracao-rafael"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="narracao-rafael" class="section-content">
+                    <p>Meu nome é Rafael Bernardo de Lima e moro na cidade de Camaragibe, Pernambuco. Adoro ser
+                        criativo, especialmente na programação. Recebi créditos que reconhecem meu trabalho e
+                        dedicação. Nos meus momentos de lazer, gosto de jogar e ouvir música, e acredito que o mundo
+                        deveria ser um local ideal para a convivência de todos. Estou sempre em busca de novas
+                        oportunidades para trabalhar na área de backend.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('competencias-rafael','arrow-competencias-rafael')">
+                    <span>Competências</span>
+                    <span class="arrow" id="arrow-competencias-rafael"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="competencias-rafael" class="section-content">
+                    <p>Dedicação/Trabalho em equipe/Inovador.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('experiencias-rafael','arrow-experiencias-rafael')">
+                    <span>Experiências Profissionais</span>
+                    <span class="arrow" id="arrow-experiencias-rafael"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="experiencias-rafael" class="section-content">
+                    <p>Ao longo da minha carreira, tive a oportunidade de trabalhar em projetos como Digiworld
+                        Absalon, onde corrigia e criava novos códigos em Lua.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('escolaridade-rafael','arrow-escolaridade-rafael')">
+                    <span>Escolaridade</span>
+                    <span class="arrow" id="arrow-escolaridade-rafael"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="escolaridade-rafael" class="section-content">
+                    <p>Ensino médio - Completo<br>Ensino superior_Jogos Digitais- Completo<br>Ensino
+                        Superior_Engenharia da computação - Cursando</p>
+                </section>
+            </section>
+        </section>
+        <!--Paulo-->
+        <section class="profile-card" id="perfil_Paulo" onmouseover="rolagem('perfil_Paulo')">
+            <section class="profile-header">
+                <img src="assets/imgPaulo.jpeg" alt="Profile Picture">
+                <h2>Paulo Sérgio F. de Lima Júnior</h2>
+            </section>
+            <section class="social-icons">
+                <img src="assets/instagram.png" alt="Instagram"
+                    onclick="abrirLink('https://www.instagram.com/_paulinhosf_/')">
+                <img src="assets/facebook.png" alt="Facebook"
+                    onclick="abrirLink('https://www.facebook.com/profile.php?id=100018374803432')">
+                <img src="assets/linkedin.png" alt="LinkedIn"
+                    onclick="abrirLink('https://www.linkedin.com/in/paulo-s%C3%A9rgio-62a5a8291/')">
+                <img src="assets/github.png" alt="GitHub" onclick="abrirLink('https://github.com/P4UL0SFLJ')">
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('narracao-paulo','arrow-narracao-paulo')">
+                    <span>Narração do Integrante</span>
+                    <span class="arrow" id="arrow-narracao-paulo"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="narracao-paulo" class="section-content">
+                    <p>Olá, está é Paulo França, possui 18 anos, reside na cidade de Paulista - PE e seus
+                        passatempos favoritos são animes, jogos e música. Sua curiosidade por tecnologia, o levou a
+                        escolher Engenharia da Computação buscando aprofundar seu conhecimento e futuramente
+                        trabalhar na área.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('competencias-paulo','arrow-competencias-paulo')">
+                    <span>Competências</span>
+                    <span class="arrow" id="arrow-competencias-paulo"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="competencias-paulo" class="section-content">
+                    <p>Hiperativo/Trabalha bem em equipe/Habilidades Tecnicas.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('experiencias-paulo','arrow-experiencias-paulo')">
+                    <span>Experiências Profissionais</span>
+                    <span class="arrow" id="arrow-experiencias-paulo"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="experiencias-paulo" class="section-content">
+                    <p>Atendimento ao cliente e contabilidade de vendas.</p>
+                </section>
+            </section>
+            <section class="section">
+                <section class="section-header" onclick="toggleSection('escolaridade-paulo','arrow-escolaridade-paulo')">
+                    <span>Escolaridade</span>
+                    <span class="arrow" id="arrow-escolaridade-paulo"><img class="arrow-img" src="assets/arrow.png"
+                            alt=""></span>
+                </section>
+                <section id="escolaridade-paulo" class="section-content">
+                    <p>Ensino médio - Completo<br>Ensino Superior_Engenharia da computação - Cursando</p>
+                </section>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="defaultfooter" id="footerh">
+        <h6>Muito obrigado por visitar nosso site!</h6>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

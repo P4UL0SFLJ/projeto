@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/pacman_icon.ico" type="image/x-icon">
+    <title>Contato</title>
+</head>
+
+<body class="defaultbody" id="body">
+    <header class="default-header" id="header">
+
+        <a class="hnav" id="navegar" href="index.html">Sobre Nós</a>
+        <a class="hnav" id="navegarcont" href="conteudo.html">Conteúdo</a>
+        <a class="hnav" id="navegarcad" href="cadastro.html">Saiba Mais</a>
+
+        <nav class="header-menu">
+            <img src="assets/menu-bar.png" alt="" class="menu-barra" onclick="abreMenu()">
+            <section class="menu-container">
+                <img src="assets/menu-bar.png" alt="" class="menu-insidebar" onclick="fecharMenu()">
+                <nav class="menu-link">
+                    <a class="link" id="navegar" href="index.html"><img class="icone-menu" src="assets/casa.png"
+                            alt="">Home</a>
+                    <a class="link" id="navegarcont" href="conteudo.html"><img class="icone-menu"
+                            src="assets/conteudo.png" alt="">Conteúdo</a>
+                    <a class="link" id="navegarcad" href="cadastro.html"><img class="icone-menu" src="assets/pessoa.png"
+                            alt="">Contato/Login</a>
+                    <section class="fundo" id="fundo"></section>
+                </nav>
+            </section>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="coontainer">
+            <section id="logo-section">
+                <img src="assets/pacman-removebg-preview.png" alt="logo" id="logo">
+            </section>
+            
+            <article>
+                <h1 id="title">Olá, amigo!</h1>
+                <p class="legend" id="legend1">Crie uma conta para saber mais sobre nós</p>
+                <p class="legend" id="legend2">Já possui uma conta? Role a tela para baixo e confira nossas novidades.
+                </p>
+            </article>
+
+            <form id="registrar-formulario" class="form" autocomplete="on">
+                <section class="input-field">
+                    <label for="user">Nome:</label>
+                    <input type="text" name="user" id="user" class="form-control" required minlength="5"
+                        placeholder="Nome do usuário..." autocomplete="name">
+                </section>
+
+                <section class="input-field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" class="form-control" required
+                        placeholder="E-mail do usuário..." autocomplete="email">
+                </section>
+
+                <section class="input-field">
+                    <label for="idate">Data de nascimento:</label>
+                    <input type="date" name="date" id="idate" class="form-control" required>
+                </section>
+
+                <section class="input-field">
+                    <label for="iest">Sexo:</label>
+                    <select name="sexo" id="iest" class="form-control" required>
+                        <option value="" selected>Selecione</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outro</option>
+                    </select>
+                </section>
+
+                <section class="input-field" id="inputSenha1">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password1" class="form-control" required minlength="8"
+                        placeholder="Crie uma senha..." autocomplete="new-password" onchange="confereSenha();">
+                    <span class="show" id="btn1"><ion-icon name="eye-outline"></ion-icon></span>
+                </section>
+
+                <section class="input-field" id="inputSenha2">
+                    <label for="confirmPassword">Confirmar senha:</label>
+                    <input type="password" name="confirmPassword" id="password2" class="form-control" required
+                        minlength="8" placeholder="Confirme sua senha..." autocomplete="new-password"
+                        onchange="confereSenha();">
+                    <span class="show" id="btn2"><ion-icon name="eye-outline"></ion-icon></span>
+                </section>
+
+                <label class="rememberMe" for="rememberMe">
+                    <input type="checkbox" id="rememberMe" name="rememberMe" required>
+                    <span class="rememberMe-p">A senha criada não poderá ser recuperada caso seja esquecida.
+                        Certifique-se
+                        de anotá-la em um local seguro.</span>
+                </label>
+
+                <section id="imsg-label">
+                    <label for="imsg">Mensagem:</label>
+                    <textarea name="msg" id="imsg" required
+                        placeholder="O que você acha que podemos melhorar no nosso site?"></textarea>
+                </section>
+
+                <button type="submit" class="submit-button" id="submit-button"
+                    onclick="redireciona('index.html')">Cadastrar</button>
+            </form>
+
+            <section class="login" id="login">
+                <p class="legend" id="account-question">Já possui uma conta?</p>
+                <p class="legend" id="entrar-link" onclick="logar()">Clique aqui.</p>
+            </section>
+
+            <section class="login" id="contato">
+                <p class="legend" id="account-question">Contato administrador:</p>
+                <p class="legend" id="entrar-link">exemplodeemail123@mail.com</p>
+            </section>
+
+            <!-- Novo Formulário Oculto -->
+            <section class="formularioOculto" id="formularioOculto">
+                <section id="entrarsection" class="entrarsection">
+                    <p id="legend3" class="legend">Preencha com seus dados cadastrados da primeira visita ao site.</p>
+
+                    <form id="login-form" class="form-login">
+                        <section class="input-field">
+                            <label for="login-email">E-mail:</label>
+                            <input type="email" name="login-email" id="login-email" class="form-control" required
+                                placeholder="E-mail do usuário...">
+                        </section>
+
+                        <section class="input-field">
+                            <label for="login-password">Senha:</label>
+                            <input type="password" name="login-password" id="login-password" class="form-control"
+                                required placeholder="Digite sua senha...">
+                        </section>
+
+                        <label class="rememberMe" for="rememberMe">
+                            <input type="checkbox" id="rememberMe" name="rememberMe" required checked>
+                            <span class="rememberMe-p">Lembre-se de mim.</span>
+                        </label>
+
+                        <button type="submit" class="submit-button" id="login-submit-button"
+                            onclick="redireciona('index.html')">Entrar</button>
+                    </form>
+                </section>
+
+                <section class="login" id="contatoLogin">
+                    <p class="legend" id="account-question">Contato administrador:</p>
+                    <p class="legend" id="entrar-link">exemplodeemail123@mail.com</p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="defaultfooter" id="footer">
+        <h6>Muito obrigado por visitar nosso site!</h6>
+    </footer>
+
+    <script>
+        function redireciona(url) {
+            window.location.replace(url);
+        }
+    </script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
