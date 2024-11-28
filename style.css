@@ -424,6 +424,7 @@ span {
 
 
 .form{
+    gap: 16px;
     margin-bottom: 20px;
     width: 400px;
     display: flex;
